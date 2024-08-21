@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order App</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        Food Delight
+      </a>
+      <li class="nav-item"><a class="nav-link" href="backery.html">home</a>
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart" id="cart-icon"></ion-icon>
+      </div>
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+          <!-- Cart Items will be dynamically added here -->
+        </div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs.0</div>
+         
+        </div>
+        <button class="btn-buy">Place Order</button>
+        <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h2 class="title">Discover the Best Food</h2>
+    <div class="shop-content">
+      <div class="btn-group">
+        <button class="btn btn-clicked" data-filter="all">All</button>
+        <button class="btn" data-filter="pizza">Pizza</button>
+        <button class="btn" data-filter="cake">Cake</button>
+        <button class="btn" data-filter="icecream">Ice Cream</button>
+        <input type="text" placeholder="Search Food" id="search">
+      </div>
+
+      <!-- Food items -->
+      <div class="food-box" data-item="cake">
+        <div class="pic"><img src="cake3.jpg" class="food-img"></div>
+        <h2 class="food-title">Blackforest Cake</h2>
+        <span class="food-price">Rs.400</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="cake">
+        <div class="pic"><img src="cake4.jpg" class="food-img"></div>
+        <h2 class="food-title">Ice Cake</h2>
+        <span class="food-price">Rs.650</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="icecream">
+        <div class="pic"><img src="icecream1.jpg" class="food-img"></div>
+        <h2 class="food-title">Vennila Icecream</h2>
+        <span class="food-price">Rs.80</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="icecream">
+        <div class="pic"><img src="icecream2.jpg" class="food-img"></div>
+        <h2 class="food-title">Chocolate Ice Cream</h2>
+        <span class="food-price">Rs.55</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+       
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="icecream">
+        <div class="pic"><img src="icecream3.jpg" class="food-img"></div>
+        <h2 class="food-title">Strawberry Icecream</h2>
+        <span class="food-price">Rs.45</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="icecream">
+        <div class="pic"><img src="icecream4.jpg" class="food-img"></div>
+        <h2 class="food-title">Rose Petals Icecream</h2>
+        <span class="food-price">Rs.150</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="pizza">
+        <div class="pic"><img src="piza1.jpg" class="food-img"></div>
+        <h2 class="food-title">Tomato Pizza</h2>
+        <span class="food-price">Rs.150</span>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box" data-item="pizza">
+        <div class="pic"><img src="piza2.jpg" class="food-img"></div>
+        <h2 class="food-title">Margherita Pizza</h2>
+        <span class="food-price">Rs.300</span>
+        <button class="star">&#9734;</button><button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <button class="star">&#9734;</button>
+        <p class="current-rating">0 of 5</p>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <a href="\E:\ecommerce\js own project\backery.html">Home</a>
+    </div>
+  </div>
+  <script src="script.js.js"></script>
+</body>
+</html>
